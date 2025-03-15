@@ -1,0 +1,81 @@
+.merged-navbar {
+  background-color: #0f2b38;
+  width: 100%;
+}
+
+/* Apply smooth transition to all elements with the 'hover-effect' class */
+.hover-effect {
+  transition: all 0.3s ease;
+}
+
+/* On hover, change text color and add a slight upward movement */
+.hover-effect:hover {
+  color: #ee6c6c !important;
+  transform: translateY(-3px);
+}
+
+/* Special styles for the Sign-Up button */
+.signup-btn {
+  background-color: #ee6c6c;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* On hover, darken the button color and slightly increase its size */
+.signup-btn:hover {
+  background-color: #d65555;
+  transform: scale(1.05);
+}
+.gift-animation {
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+
+/* On hover, trigger a custom keyframe animation */
+.gift-animation:hover {
+  animation: giftAnim 0.6s ease-in-out;
+}
+
+/* Define the animation keyframes */
+@keyframes giftAnim {
+  0% { transform: rotate(0deg) scale(1); }
+  30% { transform: rotate(10deg) scale(1.1); }
+  60% { transform: rotate(-10deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+.signup-btn {
+  background-color: #ee6c6c;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: bold;
+  /* Remove transform property here if it conflicts with animation */
+}
+
+/* Apply smooth transition for the button animation */
+.button-animation {
+  transition: transform 0.6s ease;
+}
+
+/* On hover, trigger the keyframe animation */
+.button-animation:hover {
+  animation: giftAnim 0.6s ease-in-out;
+}
+
+/* Reused keyframes from the gift animation */
+@keyframes giftAnim {
+  0% { transform: rotate(0deg) scale(1); }
+  30% { transform: rotate(10deg) scale(1.1); }
+  60% { transform: rotate(-10deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+.dropdown-toggle::after {
+  /* Adjust the border that forms the caret */
+  border-top: 0.4em solid #ffffff; /* changes color */
+  border-right: 0.4em solid transparent;
+  border-left: 0.4em solid transparent;
+  margin-left: 0.2em; /* spacing between text and caret */
+}
