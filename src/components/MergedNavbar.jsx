@@ -4,7 +4,6 @@ import {
   FaClock, FaFilter, FaGraduationCap, FaHeadset, 
   FaSignInAlt, FaWhatsapp, FaGift 
 } from "react-icons/fa";
-import { BrowserRouter as Router , Link  } from "react-router-dom";
 import "./MergedNavbar.css"; // Import the CSS file
 
 function MergedNavbar() {
